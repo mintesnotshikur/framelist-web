@@ -1,16 +1,115 @@
-# React + Vite
+# **FrameList Web – Movie Watchlist & Discovery App**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![FrameList Banner](/static/banner.png)
 
-Currently, two official plugins are available:
+**FrameList Web** is a modern, responsive React app for discovering movies, creating a personalized watchlist, and watching trailers. Built with **React**, **Vite**, and **Tailwind CSS**, it showcases a sleek **neomorphic design** with features inspired by streaming platforms like Netflix.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## **Live Demo**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View it on Vercel](https://framelist-web.vercel.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Features**
+
+- **Top 10 Trending Movies** – A horizontal scroll carousel highlighting trending films.
+- **Movie Search** – Search movies instantly with keyboard navigation.
+- **Movie Details** – Full details including poster, genres, release date, rating, and overview.
+- **Watchlist** – Add/remove movies to a persistent watchlist stored in `localStorage`.
+- **Trailer Modal** – Watch movie trailers in a sleek popup directly on the details page.
+- **Infinite Scroll / Discover Movies** – Browse a growing list of popular movies.
+- **Responsive Design** – Looks great on mobile, tablet, and desktop.
+- **Neomorphic UI** – Modern soft UI style for a professional, clean look.
+
+---
+
+## **Screenshots**
+
+| Home Page                   | Movie Details                        | Watchlist                           |
+| --------------------------- | ------------------------------------ | ----------------------------------- |
+| ![Home](/static/banner.png) | ![Details](/static/movieDetails.png) | ![Watchlist](/static/watchList.png) |
+
+---
+
+## **Tech Stack**
+
+- **Frontend:** React, Vite, Tailwind CSS
+- **State Management:** React Context API
+- **API:** [TMDB API](https://www.themoviedb.org/)
+- **Deployment:** Vercel
+
+---
+
+## **Getting Started**
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/framelist-web.git
+cd framelist-web
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Create `.env` file
+
+```env
+VITE_TMDB_API_KEY=your_tmdb_api_key
+```
+
+### 4. Run locally
+
+```bash
+npm run dev
+```
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## **Folder Structure**
+
+```
+framelist-web/
+├─ src/
+│  ├─ components/      # Reusable UI components
+│  ├─ context/         # Watchlist context
+│  ├─ pages/           # Home, MovieDetails, Watchlist pages
+│  ├─ services/        # TMDB API service
+│  ├─ assets/          # Images, icons
+│  └─ App.jsx          # Main app entry
+└─ package.json
+```
+
+---
+
+## **Future Improvements**
+
+- Preview trailers directly on movie cards on hover
+- Add filtering by genres
+- Dark mode toggle
+- User authentication for saving watchlists across devices
+
+---
+
+## **Author**
+
+**Mintesnot Shikur** – React developer | Portfolio projects
+
+[GitHub](https://github.com/mintesnotshikur) | [LinkedIn](https://linkedin.com/in/mintesnot-shikur-a599a6357)
+
+---
+
+## **License**
+
+This project is **open source** and free to use.
